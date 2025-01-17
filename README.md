@@ -1,33 +1,28 @@
-# Gas Detection System
+# Smoke Monitoring and Detection System
 
-This project demonstrates a gas detection system built using an Arduino Uno, MQ-135 gas sensor, 16x2 LCD display, buzzer, and LEDs. The system detects gas levels in the environment and provides a warning through visual and auditory alerts when the gas concentration exceeds a certain threshold.
+This project demonstrates a smoke monitoring and detection system built using an Arduino Uno, MQ-135 gas sensor, 16x2 LCD display, buzzer, and LEDs. The system detects smoke levels in the environment and provides a warning through visual and auditory alerts when the smoke concentration exceeds a certain threshold.
 
 ---
 
 ## Features
 
-- **Real-time Gas Level Monitoring:** Displays gas concentration on the 16x2 LCD in PPM (parts per million).
-- **Audible and Visual Alerts:** Activates a buzzer and red LED when gas levels exceed the threshold.
-- **Safe Indicator:** Green LED lights up when gas levels are within the safe range.
+- **Real-time Smoke Level Monitoring:** Displays smoke concentration on the 16x2 LCD in PPM (parts per million).
+- **Audible and Visual Alerts:** Activates a buzzer and red LED when smoke levels exceed the threshold.
+- **Safe Indicator:** Green LED lights up when smoke levels are within the safe range.
 - **User-friendly Interface:** Provides real-time feedback through the LCD display.
+- **I2C Communication Protocol:** Utilized to interface the 16x2 LCD with fewer connections, simplifying the wiring process.
 
 ---
 
 ## Components Used
 
 1. **Arduino Uno** - Microcontroller for managing sensors and outputs.
-2. **MQ-135 Gas Sensor** - Measures gas concentration.
-3. **16x2 I2C LCD Display** - Displays gas values and system messages.
-4. **Buzzer** - Emits audible alerts for high gas levels.
-5. **LEDs (Red and Green)** - Visual indicators for gas level status.
+2. **MQ-135 Gas Sensor** - Measures smoke concentration.
+3. **16x2 I2C LCD Display** - Displays smoke values and system messages.
+4. **Buzzer** - Emits audible alerts for high smoke levels.
+5. **LEDs (Red and Green)** - Visual indicators for smoke level status.
 6. **Breadboard** - For easy circuit connections.
 7. **Jumper Wires** - Connects the components.
-
----
-
-## Circuit Diagram
-
-Include a diagram here (hand-drawn or created using tools like Fritzing). Provide connections clearly labeled.
 
 ---
 
@@ -35,7 +30,7 @@ Include a diagram here (hand-drawn or created using tools like Fritzing). Provid
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/your_username/gas-detection-system.git
+    git clone https://github.com/prantikm07/Smoke-Detection
     ```
 
 2. **Set Up the Hardware:**
@@ -47,7 +42,7 @@ Include a diagram here (hand-drawn or created using tools like Fritzing). Provid
 
 4. **Run the System:**
     - Power on the Arduino Uno.
-    - Observe the LCD for gas levels and corresponding alerts.
+    - Observe the LCD for smoke levels and corresponding alerts.
 
 ---
 
@@ -57,27 +52,27 @@ Include a diagram here (hand-drawn or created using tools like Fritzing). Provid
   - Initializes the LCD display and serial communication.
   - Displays introductory messages.
 - **Loop Section:**
-  - Reads gas levels from the MQ-135 sensor.
-  - Displays gas levels on the LCD.
-  - Triggers the buzzer and LEDs based on the gas concentration.
+  - Reads smoke levels from the MQ-135 sensor.
+  - Displays smoke levels on the LCD.
+  - Triggers the buzzer and LEDs based on the smoke concentration.
 
 ---
 
 ## Demo Video
 
-[Demo_Video](Click Here)
+[Click Here!](Demo_Video)
 
 ---
 
 ## Output Preview
 
 - **LCD Messages:**
-  - "GAS_VALUE: <value> PPM"
+  - "SMOKE_VALUE: <value> PPM"
   - Alerts like "WARNING!" when thresholds are exceeded.
 
 - **Buzzer and LEDs:**
-  - Buzzer and red LED activate for dangerous gas levels.
-  - Green LED indicates safe gas levels.
+  - Buzzer and red LED activate for dangerous smoke levels.
+  - Green LED indicates safe smoke levels.
 
 ---
 
@@ -92,7 +87,7 @@ You can adjust the threshold values in the code based on the specific applicatio
 
 ## Enhancements
 
-- Add support for logging gas concentration levels to an SD card.
+- Add support for logging smoke concentration levels to an SD card.
 - Implement Wi-Fi or Bluetooth for remote monitoring.
 - Integrate a rechargeable battery for portability.
 
@@ -101,9 +96,3 @@ You can adjust the threshold values in the code based on the specific applicatio
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-## Acknowledgments
-
-- Thanks to the open-source community and Arduino for making this project possible.
