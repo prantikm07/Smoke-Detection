@@ -61,6 +61,7 @@ This project demonstrates a smoke monitoring and detection system built using an
 ## Demo Video
 
 [Click here for the Demo Video!](https://github.com/prantikm07/Smoke-Detection/blob/main/Demo_Video.mp4)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://github.com/prantikm07/Smoke-Detection/blob/main/Demo_Video.mp4)
 
 ---
 
